@@ -1,5 +1,7 @@
 <!DOCTYPE>
 <head>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +10,20 @@
 <body>
     <header>
         <a href="./index.html">
-            <img src="./images/todo.png" alt="to do list" height="100" width="100">
+            <img src="./images/todo.png" alt="to do list" height="100" width="100" class="logo">
         </a>
-        <h2><i>To Do List</i></h2>
     </header>
     <nav>
         <a href="./index.html">Home</a>
     </nav>
     <br><br>
     <main>
-        <section>
-            <h4><i>Are you ready?</i></h4>
-            <p>Set yourself up for success with My Day, intelligent and personalized suggestions to update your daily or weekly to do list.<br> With both a  desktop app and mobile app available, it is easy to stay on task all day long.
-            </p>
+        <h2 id="name"><i>Mohamad Shareef</i></h2>
+        <img src="./images/avatar.png" alt="avatar" id="avatar">
+        <section id="section1">
+            <p>Software Engineering to be, currently practicing on CSS @.@</p>
         </section>
-        <section>
-            <h4>Provide us with your info to know more:</h4>
+        <section id="section2">
             <form>
                 <label>Full Name</label>
                 <input type="text"><br>
@@ -34,7 +34,7 @@
                 <input type="submit" value="Submit">
             </form>
         </section>
-        <section></section>
+        <h2 id="contact-me">Contact Me</h2>
     </main>
     <footer>
         <h6>To Do List &copy;</h6>
