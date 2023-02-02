@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +10,38 @@
 <body>
     <header>
         <a href="./index.html">
-            <img src="./images/todo.png" alt="to do" height="100" width="100">
+            <img src="./images/todo.png" alt="to do" height="100" width="100" class="logo">
         </a>
-        <h2>To Do List</h2>
         <nav>
-            <a href="./about.html">About</a>
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./index.html">Home</a></li>
+            </ul>
+            
         </nav>
         <br><br>
     </header>
     <main>
+        <h2 >To Do List</h2>
         <table border="1">
             <tr>
                 <th>Task</th>
                 <th>Status</th>
             </tr>
             <tr>
-                <td>Study HTML </td>
-                <td>On going</td>
+                <td >Study CSS </td>
+                <td class="not-done">not done</td>
             </tr>
             <tr>
                 <td>Go to gym</td>
-                <td>Done</td>
+                <td class="done">Done</td>
             </tr>
             <tr>
                 <td>go shopping</td>
-                <td>Done </td>
+                <td class="done">Done </td>
             </tr>
         </table>
+    
     </main>
     <footer>
         <h6>To do List &copy</h6>
