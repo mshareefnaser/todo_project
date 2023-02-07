@@ -16,3 +16,31 @@ if (welcome==false)
     else
     welcome=alert("Welcome "+uname)
 }
+//class06
+var allAnswers =[];
+var q1=prompt("Do you live in Amman? ");
+var q2=prompt("Do you have a car? ");
+var q3=prompt("Do you love JavaScript?");
+validAnswer(q1);
+validAnswer(q2);
+validAnswer(q3);
+printAnswers(allAnswers);
+
+function validAnswer (ans)
+{
+    if (ans)
+    {
+        allAnswers.push(ans);
+    }
+   else
+   {
+        allAnswers.push("invalid");
+   }
+}
+function printAnswers(allAns)
+{
+    for (let i=0; i<allAns.length; i++)
+    {
+        console.log(allAns[i]);
+    }
+}
